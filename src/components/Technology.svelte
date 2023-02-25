@@ -2,7 +2,7 @@
     import Icon from '@iconify/svelte';
 </script>
 
-<div class="grid text-[#fff] text-xl px-[30vw] mt-[4vh] grid-cols-[repeat(5,1fr)]">
+<div class="grid text-[#fff] text-xl px-[28vw] mt-[4vh] grid-cols-[repeat(5,1fr)]">
     <div class="col-span-5">
         <h1 class="font-bold text-[1.5rem] mb-[1.5vh]">Technologies</h1>
     </div>
