@@ -2,8 +2,8 @@
     import Icon from '@iconify/svelte';
 </script>
 
-<div class="flex px-[30vw] mt-[4vh]">
-    <img class="rounded-full w-[16vh] h-[16vh]" src="https://cdn.discordapp.com/avatars/892107677608599562/436c0d4d651974bf6300a70be5522f96.png?size=1024" alt="">
+<div class="flex px-[30vw] ml-[-3vh] mt-[4vh]">
+    <img class="rounded-full w-[16vh] mt-[3vh] ml-[3vh] h-[16vh]" src="https://cdn.discordapp.com/avatars/892107677608599562/436c0d4d651974bf6300a70be5522f96.png?size=1024" alt="">
     <div class="text-[#fff] ml-[3.5vh] mt-[2vh]">
         <p class="text-[#fff] text-[2rem] font-semibold">nate</p>
         <p class="text-[#fff] font-[550]">Software Developer | Computer Scientist</p>
