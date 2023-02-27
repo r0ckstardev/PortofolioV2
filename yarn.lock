@@ -896,6 +896,11 @@ svelte-hmr@^0.15.1:
   resolved "https://registry.npmjs.org/svelte-hmr/-/svelte-hmr-0.15.1.tgz"
   integrity sha512-BiKB4RZ8YSwRKCNVdNxK/GfY+r4Kjgp9jCLEy0DuqAKfmQtpL38cQK3afdpjw4sqSs4PLi3jIPJIFp259NkZtA==
 
+svelte-lanyard@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/svelte-lanyard/-/svelte-lanyard-1.0.2.tgz#75277d613b4b6326c27188f93111b608bfb03605"
+  integrity sha512-JxXHaTkIyDE7BAg6PHP/QP9qsqYcQO/SOmCokb6rKfDHAKsn09XtRC8mBcLKjaqDG/MVSONCaQSsXi85hUhWCQ==
+
 svelte@^3.54.0:
   version "3.55.1"
   resolved "https://registry.npmjs.org/svelte/-/svelte-3.55.1.tgz"
