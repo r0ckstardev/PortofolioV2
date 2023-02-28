@@ -10,20 +10,27 @@ onMount(async () => {
 });
 
   
-  let cordStatus = 'Loading'
+  let cordStatus = 'Loading..'
   let badgeColor = ''
-   $: artistName = $data?.spotify.artist
-   $: songName =   $data?.spotify.song
-   $: albumName =  $data?.spotify.album
+   $: artistName = "hello"
+   $: songName = "hello"
+   $: albumName = "hello"
 
   let isListening = false
   
 $: {
+  if($data?.spotify) {
     if($data?.spotify) {
         isListening = true
+        artistName = $data?.spotify.artist
+        songName =   $data?.spotify.song
+        albumName =  $data?.spotify.album
     } else {
         isListening = false
     }
+  } else if(!$data?.spotify) {
+    console.log("no data")
+  }
 }
 
 $: {
@@ -36,7 +43,7 @@ if($data?.discord_status === 'dnd') {
   } else if($data?.discord_status === 'online') {
     cordStatus = "Online"
     badgeColor = '#57F287'
-  }  else if($data?.discord_status === 'invisible') {
+  }  else if($data?.discord_status === 'offline') {
     cordStatus = "Offline"
     badgeColor = 'grey'
   }
@@ -50,7 +57,7 @@ if($data?.discord_status === 'dnd') {
         <p class="text-[#fff] text-[2rem] font-semibold">nate</p>
         <p class="text-[#fff] font-[550]">Software Developer | Computer Scientist</p>
         <div class="flex align-middle items-center mt-[1vh] h-[2vh]"><Icon icon="carbon:dot-mark" width="32" height="32" color={badgeColor} /> <p class="text-[#a8a8a8] font-[550]">{cordStatus}</p></div>
-        <div class="flex align-middle items-center ml-[.4vh] mt-[1vh] h-[2vh]"><Icon icon="mdi:spotify" width="22" height="22" /> <p class="text-[#a8a8a8] font-[550] ml-[.5vh]">
+        <div class="flex w-[40vw] align-middle items-center ml-[.4vh] mt-[1vh] h-[2vh]"><Icon icon="mdi:spotify" width="22" height="22" /> <p class="text-[#a8a8a8] font-[550] ml-[.5vh]">
             {isListening ? `Listening to ${songName} by ${artistName} on ${albumName}` : "currently not listening to anything"}
         </p></div>
         <div class="flex flex-row mt-[1.2vh]">
@@ -58,11 +65,11 @@ if($data?.discord_status === 'dnd') {
             <img class="mr-[1vh] ml-[1vh]" src="./../lib/telegram.svg" alt="telegram">
             <img class="mr-[1vh] ml-[1vh]" src="./../lib/keybase.svg" alt="keybase">
             <img class="" src="./../lib/mail.svg" alt="email"> -->
-            <Icon class="hover:text-[#8ca4fc] hover:cursor-pointer" icon="mdi:github" color="white"  width="36" height="36" />
-            <Icon class="hover:text-[#8ca4fc] mr-[1vh] ml-[1vh] hover:cursor-pointer" icon="mdi:telegram" color="white" width="36" height="36" />
-            <Icon class="hover:text-[#8ca4fc] mr-[1vh] ml-[1vh] hover:cursor-pointer" icon="carbon:logo-keybase" color="white" width="36" height="36" />
-            <Icon class="hover:text-[#8ca4fc] mr-[1vh] ml-[1vh] hover:cursor-pointer" icon="mdi:discord" color="white" width="36" height="36" />
-            <Icon class="hover:text-[#8ca4fc] hover:cursor-pointer" icon="material-symbols:alternate-email" color="white" width="36" height="36" />
+            <a href="https://github.com/r0ckstardev" target="_blank"><Icon class="hover:text-[#8ca4fc] hover:cursor-pointer" icon="mdi:github" color="white"  width="36" height="36" /></a>
+            <a href="https://t.me/@rockstarservices" target="_blank"><Icon class="hover:text-[#8ca4fc] mr-[1vh] ml-[1vh] hover:cursor-pointer" icon="mdi:telegram" color="white" width="36" height="36" /></a>
+            <a href="https://keybase.io/cxrrupted" target="_blank"><Icon class="hover:text-[#8ca4fc] mr-[1vh] ml-[1vh] hover:cursor-pointer" icon="carbon:logo-keybase" color="white" width="36" height="36" /></a>
+            <a href="https://discordapp.com/users/892107677608599562" target="_blank"><Icon class="hover:text-[#8ca4fc] mr-[1vh] ml-[1vh] hover:cursor-pointer" icon="mdi:discord" color="white" width="36" height="36" /></a>
+            <!-- <Icon class="hover:text-[#8ca4fc] hover:cursor-pointer" icon="material-symbols:alternate-email" color="white" width="36" height="36" /> -->
         </div> 
     </div>
 </div>

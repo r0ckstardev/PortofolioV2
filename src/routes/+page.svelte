@@ -6,7 +6,7 @@
 	import Donate from "../components/Donate.svelte";
 </script>
 
-<Navbar />
+<!-- <Navbar /> -->
 <!-- <Heading /> -->
 <NewHeading />
 <Technology />
