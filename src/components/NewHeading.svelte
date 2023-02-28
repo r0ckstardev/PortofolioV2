@@ -58,9 +58,9 @@ if($data?.discord_status === 'dnd') {
         <p class="text-[#fff] font-[550]">Software Developer | Computer Scientist</p>
         <div class="flex align-middle items-center mt-[1vh] h-[2vh]"><Icon icon="carbon:dot-mark" width="32" height="32" color={badgeColor} /> <p class="text-[#a8a8a8] font-[550]">{cordStatus}</p></div>
         <div class="flex w-[40vw] align-middle items-center ml-[.4vh] mt-[1vh] h-[2vh]"><Icon icon="mdi:spotify" width="22" height="22" /> <p class="text-[#a8a8a8] font-[550] ml-[.5vh]">
-            {isListening ? `Listening to ${songName} by ${artistName} on ${albumName}` : "currently not listening to anything"}
+            {isListening ? `Listening to ${songName} by ${artistName} on ${albumName}` : "Currently not listening to anything."}
         </p></div>
-        <div class="flex flex-row mt-[1.2vh]">
+        <div class="flex ml-[4vh] flex-row mt-[1.2vh]">
             <!-- <img class="" src="./../lib/github.svg" alt="github">
             <img class="mr-[1vh] ml-[1vh]" src="./../lib/telegram.svg" alt="telegram">
             <img class="mr-[1vh] ml-[1vh]" src="./../lib/keybase.svg" alt="keybase">
