@@ -20,8 +20,4 @@
 </div>
 
 
-<script>
-    // import useLanyard from "sk-lanyard";    
-    // const lanyard = useLanyard({ method: 'ws', id: '892107677608599562' });
-    // console.log(lanyard)
-</script>
+
