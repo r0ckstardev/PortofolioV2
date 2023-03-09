@@ -15,7 +15,7 @@
     <div class="flex mt-[.7vh] mb-[.2vh]"><Icon class="" icon="mdi:vuejs" color="white" width="32" height="32" /><span class="ml-[1vh] mr-[1vh]">VueJS</span></div>
     <div class="flex mt-[.7vh]"><Icon class="" icon="mdi:react" color="white" width="32" height="32" /><span class="ml-[1vh] mr-[1vh]">React</span></div>
     <div class="flex mt-[.7vh]"><Icon class="" icon="tabler:brand-nextjs" color="white" width="32" height="32" /><span class="ml-[1vh] mr-[1vh]">NextJS</span></div>
-    <div class="flex mt-[.7vh] mb-[.2vh]"><Icon class="" icon="logos:tailwindcss-icon" color="white" width="32" height="32" /><span class="ml-[1vh] mr-[1vh]">TailwindCSS</span></div>
+    <div class="flex mt-[.7vh] mb-[.2vh]"><Icon class=""  icon="mdi:tailwind" color="white" width="32" height="32" /><span class="ml-[1vh] mr-[1vh]">TailwindCSS</span></div>
     <div class="flex mt-[.7vh]"><Icon class="" icon="simple-icons:express" color="white" width="32" height="32" /><span class="ml-[1vh] mr-[1vh]">Express</span></div>
     <div class="flex mt-[.7vh]"><Icon class="" icon="vscode-icons:file-type-light-deno" color="white" width="32" height="32" /><span class="ml-[1vh] mr-[1vh]">Deno</span></div>
     <div class="flex mt-[.7vh] mb-[.2vh]"><Icon class="" icon="akar-icons:node-fill" color="white" width="32" height="32" /><span class="ml-[1vh] mr-[1vh]">Node</span></div>
