@@ -14,7 +14,7 @@
             class="text-xl mt-[1vh] font-semibold py-[.7vh] shadow-lg rounded-md bg-[#8ca4fc] px-[3vh] mr-[6vh]">Work With me</button>
     </div>
     <div class="px-[6vh] mr-[25vh] py-[8vh] float-right">
-        <img class="rounded-full" src="https://cdn.discordapp.com/avatars/892107677608599562/436c0d4d651974bf6300a70be5522f96.png?size=1024" alt="">
+        <img class="rounded-full" src="https://cdn.discordapp.com/avatars/892107677608599562/7622de9d0016db596f13796dfbb760f7.png?size=1024" alt="">
         <p class="text-[#fff]"></p>
     </div>
 </div>
